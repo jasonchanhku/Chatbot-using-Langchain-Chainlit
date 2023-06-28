@@ -14,4 +14,4 @@ Run Chainlit app
 chainlit run app.py
 ```
 
-[](./homepage.png)
+![](./homepage.png)
