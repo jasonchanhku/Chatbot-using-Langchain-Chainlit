@@ -9,7 +9,9 @@ Install dependencies
 pip install -r requirements.txt
 
 ```
-Run Flask app
+Run Chainlit app
 ```python
 chainlit run app.py
 ```
+
+[HomePage](./homepage.png)
