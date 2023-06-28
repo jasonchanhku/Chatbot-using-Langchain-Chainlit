@@ -11,5 +11,5 @@ pip install -r requirements.txt
 ```
 Run Flask app
 ```python
-python app.py
+chainlit run app.py
 ```
