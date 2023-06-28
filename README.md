@@ -1,4 +1,4 @@
-# Chatbot-using-Langchain
+# Chatbot using Langchain and Chainlit
 
 ```bash
 git clone https://github.com/xinntao/Real-ESRGAN.git
@@ -14,4 +14,5 @@ Run Chainlit app
 chainlit run app.py
 ```
 
+UI:
 ![](./homepage.png)
