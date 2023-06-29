@@ -1,8 +1,7 @@
 # Chatbot using Langchain and Chainlit
 
 ```bash
-git clone https://github.com/xinntao/Real-ESRGAN.git
-
+git clone https://github.com/amalaj7/Chatbot-using-Langchain-Chainlit.git
 ```
 Install dependencies
 ```bash
