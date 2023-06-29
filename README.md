@@ -15,4 +15,4 @@ chainlit run app.py
 ```
 
 UI:
-![](./homepage.png)
+[Homepage_UI](./homepage.png)
