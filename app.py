@@ -1,49 +1,42 @@
 from langchain.agents import create_pandas_dataframe_agent
+from langchain.schema import HumanMessage, SystemMessage
+from langchain.agents.agent_types import AgentType
 from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
 import pandas as pd
+from dotenv import load_dotenv
 import chainlit as cl
 import io
 
-open_ai_key = "YOUR_API_KEY"
+open_ai_key = os.getenv('OPENAI_API_KEY')
 
 # Create an OpenAI object.
-llm = OpenAI(openai_api_key=open_ai_key)
+llm = ChatOpenAI(openai_api_key=open_ai_key, temperature=0)
 
 
 def create_agent(data: str, llm):
+    system_message = SystemMessage(content="You are a useful customer chatbot serving a user who asks questions about his Manulife insurance policies provided in the dataframe. Strictly only answer questions related to the provided dataframe")
+    agent_kwargs = {
+        "system_message": system_message,
+    }
 
     # Create a Pandas DataFrame agent.
-    return create_pandas_dataframe_agent(llm, data, verbose=False)
+    return create_pandas_dataframe_agent(llm, data, verbose=True, agent_type=AgentType.OPENAI_FUNCTIONS,agent_kwargs=agent_kwargs)
 
 
 @cl.on_chat_start
 async def on_chat_start():
 
-    # Sending an image with the local file path
-    elements = [
-    cl.Image(name="image1", display="inline", path="./good_day.jpg")
-    ]
-    await cl.Message(content="Hello there, Welcome to AskAnyQuery related to Data!", elements=elements).send()
+    await cl.Message(content="Hello there, Welcome to Customer Info Chatbot! Ask Anything about your products!").send()
 
-    files = None
-
-    # Wait for the user to upload a file
-    while files == None:
-        files = await cl.AskFileMessage(
-            content="Please upload a csv file to begin!", accept=["text/csv"], max_size_mb= 100
-        ).send()
-
-    # load the csv data and store in user_session
-    file = files[0]
-    csv_file = io.BytesIO(file.content)
-    df = pd.read_csv(csv_file, encoding="utf-8")
+    df = pd.read_csv("./mydata.csv", encoding="utf-8")
 
     # creating user session to store data
     cl.user_session.set('data', df)
 
     # Send back the response
     await cl.Message(
-        content=f"`{file.name}` uploaded! Now you ask me anything related to your data"
+        content= "Data retrieved! Now you ask me anything related to your Manulife policies"
     ).send()
 
 

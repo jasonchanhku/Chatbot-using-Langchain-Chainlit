@@ -2,3 +2,5 @@ langchain
 chainlit
 tabulate
 pandas
+openai
+python-dotenv

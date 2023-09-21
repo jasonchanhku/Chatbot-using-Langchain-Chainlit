@@ -1,0 +1,16 @@
+policy_name,policy_id,insurance_type,policy_start_date,policy_end_date,policy_status,premium_amount,payment_frequency,payment_mode,exclusions,inclusions,total_claims_amount,cash_value,surrender_value,last_payment_date,next_payment_date
+Manulife Bright Care PRO,HP001,health,01/01/2016,01/01/2026,active,2000,monthly,credit card,pre-existing conditions,all medical expenses,5000,0,0,01/10/2021,01/11/2021
+Flexi Fortune,SA001,savings,01/01/2017,01/01/2027,active,1500,quarterly,bank transfer,none,all deposits to savings,0,10000,9000,01/07/2021,01/10/2021
+ManuTerm,LS001,life,01/01/2018,01/01/2028,active,2500,annual,cheque,suicide,self,0,20000,18000,01/01/2021,01/01/2022
+ManuLove Care,MS001,health,01/02/2016,01/02/2026,surrendered,1000,monthly,credit card,pre-existing conditions,all medical expenses,2000,0,800,01/02/2021,NA
+ManuElite Protector,LP001,life,01/03/2017,01/03/2027,surrendered,1200,quarterly,bank transfer,suicide,self,0,8000,7200,01/07/2021,NA
+ManuLeisure,SM001,savings,01/06/2018,01/06/2028,active,3000,annual,cheque,none,all deposits to savings,0,15000,13500,01/06/2021,01/06/2022
+ManuVital Care,SH001,health,01/04/2016,01/04/2026,active,2200,monthly,credit card,pre-existing conditions,all medical expenses,4400,0,0,01/10/2021,01/11/2021
+ManuDelight,GS001,savings,01/05/2018,01/05/2028,active,2600,quarterly,bank transfer,none,all deposits to savings,0,13000,11700,01/07/2021,01/10/2021
+La Vie 2,PL001,savings,01/08/2018,01/08/2028,active,2700,annual,cheque,suicide,self,0,13500,12150,01/08/2021,01/08/2022
+ManuPrimo Care,PH001,health,01/06/2016,01/06/2026,active,2400,monthly,credit card,pre-existing conditions,all medical expenses,4800,0,0,01/10/2021,01/11/2021
+ManuCentury,PS001,savings,01/07/2017,01/07/2027,active,2800,quarterly,bank transfer,none,all deposits to savings,0,14000,12600,01/07/2021,01/10/2021
+ManuGlobal Saver,SL001,savings,01/09/2018,01/09/2028,active,2900,annual,cheque,suicide,self,0,14500,13050,01/09/2021,01/09/2022
+Cancer Guard,CH001,health,01/08/2016,01/08/2026,active,2500,monthly,credit card,pre-existing conditions,all medical expenses,5000,0,0,01/10/2021,01/11/2021
+ManuGrand Saver,GS002,savings,01/01/2017,01/01/2027,active,1500,quarterly,bank transfer,none,all deposits to savings,0,7500,6750,01/07/2021,01/10/2021
+ManuImperial Saver,LP002,savings,01/10/2018,01/10/2028,active,3000,annual,cheque,suicide,self,0,15000,13500,01/10/2021,01/10/2022
