@@ -27,7 +27,7 @@ def create_agent(data: str, llm):
 @cl.on_chat_start
 async def on_chat_start():
 
-    await cl.Message(content="Hello there, Welcome to Customer Info Chatbot! Ask Anything about your products!").send()
+    await cl.Message(content="Hello there, Welcome to Customer Info Chatbot! Ask Anything about your Manulife policies!").send()
 
     df = pd.read_csv("./mydata.csv", encoding="utf-8")
 
