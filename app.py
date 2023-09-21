@@ -7,7 +7,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import chainlit as cl
 import io
-
+import os
 open_ai_key = os.getenv('OPENAI_API_KEY')
 
 # Create an OpenAI object.
